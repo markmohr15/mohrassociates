@@ -4,4 +4,14 @@ class SiteController < ApplicationController
     render
   end
 
+  def about_us
+    render
+  end
+
+  def resources
+    render
+  end
+
+
+
 end
