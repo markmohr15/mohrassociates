@@ -12,6 +12,13 @@ class SiteController < ApplicationController
     render
   end
 
+  def news
+    render
+  end
+
+  def services
+    render
+  end
 
 
 end
