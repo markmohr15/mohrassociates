@@ -1,11 +1,10 @@
 //red is 125r, 0g, 9b   7D0009
 //yellow is 254r, 225g, 120b    FEE178
 
-
 @import "bootstrap";
 @import "font-awesome";
 
-body {
+body, html {
   font-family: 'Alegreya', serif;
 }
 
@@ -22,6 +21,52 @@ nav, footer {
 
 footer {
   padding: 10px 10px 10px 60px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.home-content {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.fa-check-square-o {
+  font-size: 32px;
+  position: relative;
+  top: 5px;
+}
+
+.right {
+  float: right;
+}
+
+.checkbox {
+  font-size: 18px;
+
+  @media (min-width: 34em) {
+    font-size: 24px;
+  }
+}
+
+.checkbox-right {
+  @media (min-width: 992px) {
+    float: right;
+  }
+}
+
+#tax-prep {
+  padding-right: 5px;
+}
+
+#consulting {
+  padding-right: 54px;
+}
+
+#experienced {
+  padding-right: 43px;
 }
 
 .navbar {
@@ -55,6 +100,10 @@ li.nav-item.active {
   background-color: #7D0009;
 }
 
+a.nav-link {
+  line-height: 2em;
+}
+
 @media (min-width: 34em) {
   .navbar-brand {
     float: left;
@@ -75,9 +124,90 @@ li.nav-item.active {
   }
 }
 
-
-
-.container {
+.container-fluid {
   padding: 30px;
+}
+
+.header-logo {
+  width: 300px;
+  height: 230px;
+  display:block;
+  margin:auto;
+
+  @media (max-width: 800px) {
+    width: 261px;
+    height: 200px;
+  }
+}
+
+.get-started {
+  text-align: center;
+
+  input {
+    width: 85%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #dddddd;
+  }
+
+  #web_contact_name, #web_contact_email, #web_contact_phone {
+    border-bottom: none;
+  }
+
+  textarea {
+    width: 85%;
+    height: 150px;
+    resize: vertical;
+    border: 1px solid #dddddd;
+  }
+
+  textarea::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  textarea:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    font-size: 24px;
+  }
+
+  textarea::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+    font-size: 24px;
+  }
+
+  textarea:-ms-input-placeholder {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  @media (min-width: 34em) {
+    textarea, input {
+      width: 67%;
+    }
+  }
+}
+
+.btn {
+  border-radius: 3px;
+  text-transform: none;
+  min-width: 110px;
+  margin-bottom: 0.25em;
+  padding: 0.75em 1em;
+  background-color: #48b4b4;
+  color: #ffffff;
+  line-height: 1;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 

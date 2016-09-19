@@ -14,7 +14,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha4'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+gem 'annotate'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
