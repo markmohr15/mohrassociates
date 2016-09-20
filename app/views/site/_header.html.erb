@@ -20,6 +20,16 @@
     <li class="nav-item <%= current_page?(resources_path) ? "active" : "" %>">
       <%= link_to "Resources", resources_path, class: "nav-link" %>
     </li>
+
+    <% if current_admin %>
+      <li class="nav-item <%= controller.controller_name == "news" ? "active" : "" %>">
+        <%= link_to "Admin", admin_news_index_path, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "Sign Out", destroy_admin_session_path, method: :delete, class: "nav-link" %>
+      </li>
+    <% end %>
   </ul>
 
 </nav>

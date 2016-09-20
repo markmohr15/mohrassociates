@@ -10,5 +10,8 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :admin do
+    resources :news, except: [:new, :show]
+  end
   root to: "site#home"
 end
