@@ -28,6 +28,28 @@ h1 {
   padding-bottom: 10px;
 }
 
+.btn {
+  border-radius: 3px;
+  text-transform: none;
+  min-width: 110px;
+  margin-bottom: 0.25em;
+  padding: 0.75em 1em;
+  background-color: #48b4b4;
+  color: #ffffff !important;
+  line-height: 1;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .home-content {
   margin-bottom: 25px;
   overflow: hidden;
@@ -189,25 +211,60 @@ a.nav-link {
   }
 }
 
-.btn {
-  border-radius: 3px;
-  text-transform: none;
-  min-width: 110px;
-  margin-bottom: 0.25em;
-  padding: 0.75em 1em;
-  background-color: #48b4b4;
-  color: #ffffff;
-  line-height: 1;
-  font-weight: 700;
-  font-style: normal;
+.posts-table {
+  width: 100%;
+}
+
+.post-form {
   text-align: center;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+
+  input {
+    width: 75%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #dddddd;
+  }
+
+  #post_title, #post_author {
+    border-bottom: none;
+  }
+
+  input#post_published, label{
+    display: inline-block;
+    width: initial;
+  }
+
+  textarea {
+    width: 75%;
+    height: 200px;
+    resize: vertical;
+    border: 1px solid #dddddd;
+  }
+
+  textarea::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  textarea:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    font-size: 24px;
+  }
+
+  textarea::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+    font-size: 24px;
+  }
+
+  textarea:-ms-input-placeholder {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.content {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 

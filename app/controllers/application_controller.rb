@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def after_sign_in_path_for resource
-    admin_news_index_path
+    admin_posts_path
   end
 
   def authenticate_admin
