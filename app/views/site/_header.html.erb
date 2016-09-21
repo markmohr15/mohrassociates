@@ -13,7 +13,7 @@
       <%= link_to "Services", services_path, class: "nav-link" %>
     </li>
 
-    <li class="nav-item <%= controller.controller_name == "posts" ? "active" : "" %>">
+    <li class="nav-item <%= controller.controller_name == "posts" && @in_admin != true ? "active" : "" %>">
       <%= link_to "News", posts_path, class: "nav-link" %>
     </li>
 

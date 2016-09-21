@@ -10,8 +10,10 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :posts, only: [:index, :show], path: :news
+
   namespace :admin do
-    resources :news, except: [:new, :show]
+    resources :posts, except: [:new, :show]
   end
   root to: "site#home"
 end

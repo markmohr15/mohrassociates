@@ -1,0 +1,16 @@
+<%= form_for [:admin, @post], html: {class: 'post-form'} do |f| %>
+
+  <%= f.text_field :title, placeholder: "Title" %>
+  <%= f.text_field :author, placeholder: "Author" %>
+  <%= f.text_area :content, placeholder: "Content" %>
+  <p>
+  <%= f.label :published, "Publish" %>
+  <%= f.check_box :published %>
+  </p>
+  <% if f.object.new_record? %>
+    <%= f.submit "Create Post", class: "btn" %>
+  <% else %>
+    <%= f.submit "Update Post", class: "btn" %>
+  <% end %>
+
+<% end %>

@@ -16,6 +16,7 @@ gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'font-awesome-rails'
 gem 'annotate'
+gem 'will_paginate', '~> 3.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
