@@ -5,7 +5,7 @@
 @import "font-awesome";
 
 body, html {
-  font-family: 'Alegreya', serif;
+  font-family: serif;
 }
 
 a {
@@ -34,7 +34,7 @@ h1 {
   min-width: 110px;
   margin-bottom: 0.25em;
   padding: 0.75em 1em;
-  background-color: #48b4b4;
+  background-color: #7D0009;
   color: #ffffff !important;
   line-height: 1;
   font-weight: 700;
@@ -264,7 +264,30 @@ a.nav-link {
 }
 
 .content {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
+
+  @media (min-width: 800px) {
+    margin: 15px 70px;
+  }
+
+}
+
+.author-date {
+  text-align: center;
+  color: rgba(31,31,31,.5);
+  padding-bottom: 15px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.date:before {
+  content: '\00B7';
+  padding: 0 10px 0 8px;
+}
+
+.read-more {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 

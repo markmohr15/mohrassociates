@@ -2,10 +2,14 @@
   <div class="col-md-12">
     <% @posts.each do |post| %>
       <div class="content">
-        <h2> <%= post.title %> </h2>
-        <h5> By <%= post.author %> on <%= post.updated_at.strftime('%m/%d/%Y') %> </h5>
+        <h1> <%= post.title %> </h1>
+        <div class="author-date">
+          <span class="author"> By <%= post.author %> </span>  <span class="dateline"><span class="date"><%= post.updated_at.strftime('%B %e, %Y') %> </span> </span>
+        </div>
         <div> <%= post.preview %> </div>
-        <%= button_to "Read More", post_path(post.slug), class: "btn", method: :get %>
+        <div class="read-more">
+          <%= button_to "Read More", post_path(post.slug), class: "btn", method: :get %>
+        </div>
       </div>
     <% end %>
     <%= will_paginate @posts %>
