@@ -5,7 +5,7 @@
       <div class="author-date">
         <span class="author"> By <%= @post.author %> </span>  <span class="dateline"><span class="date"><%= @post.updated_at.strftime('%B %e, %Y') %> </span> </span>
       </div>
-      <div> <%= @post.preview %> </div>
+      <div> <%= @post.content.html_safe %> </div>
     </div>
   </div>
 </div>

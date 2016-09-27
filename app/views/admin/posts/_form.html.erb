@@ -1,8 +1,10 @@
+<%= tinymce_assets %>
+<script type="text/javascript" src="/assets/tinymce.js"></script>
 <%= form_for [:admin, @post], html: {class: 'post-form'} do |f| %>
 
   <%= f.text_field :title, placeholder: "Title" %>
   <%= f.text_field :author, placeholder: "Author" %>
-  <%= f.text_area :content, placeholder: "Content" %>
+  <%= f.text_area :content, placeholder: "Content", class: "tinymce", inline: true %>
   <p>
   <%= f.label :published, "Publish" %>
   <%= f.check_box :published %>
@@ -14,3 +16,5 @@
   <% end %>
 
 <% end %>
+
+<%= tinymce %>

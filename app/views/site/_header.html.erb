@@ -1,35 +1,43 @@
 <nav class="navbar" role="navigation">
-  <ul class="nav navbar-nav">
-
-    <li class="nav-item <%= current_page?(root_path) ? "active" : "" %>">
-      <%= link_to "Home", root_path, class: "nav-link" %>
-    </li>
-
-    <li class="nav-item <%= current_page?(about_us_path) ? "active" : "" %>">
-      <%= link_to "About Us", about_us_path, class: "nav-link" %>
-    </li>
-
-    <li class="nav-item <%= current_page?(services_path) ? "active" : "" %>">
-      <%= link_to "Services", services_path, class: "nav-link" %>
-    </li>
-
-    <li class="nav-item <%= controller.controller_name == "posts" && @in_admin != true ? "active" : "" %>">
-      <%= link_to "News", posts_path, class: "nav-link" %>
-    </li>
-
-    <li class="nav-item <%= current_page?(resources_path) ? "active" : "" %>">
-      <%= link_to "Resources", resources_path, class: "nav-link" %>
-    </li>
-
-    <% if current_admin %>
-      <li class="nav-item <%= @in_admin == true ? "active" : "" %>">
-        <%= link_to "Admin", admin_posts_path, class: "nav-link" %>
+  <div class="nav-logo">
+    <%= image_tag "logo.png", size: "157x120", class: "navbar-brand" %>
+  </div>
+  <div class="collapse nav-menu navbar-toggleable-sm" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav">
+      <li class="nav-item <%= current_page?(root_path) ? "active" : "" %>">
+        <%= link_to "HOME", root_path, class: "nav-link" %>
       </li>
 
-      <li class="nav-item">
-        <%= link_to "Sign Out", destroy_admin_session_path, method: :delete, class: "nav-link" %>
+      <li class="nav-item <%= current_page?(about_us_path) ? "active" : "" %>">
+        <%= link_to "ABOUT US", about_us_path, class: "nav-link" %>
       </li>
-    <% end %>
-  </ul>
+
+      <li class="nav-item <%= current_page?(services_path) ? "active" : "" %>">
+        <%= link_to "SERVICES", services_path, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item <%= controller.controller_name == "posts" && @in_admin != true ? "active" : "" %>">
+        <%= link_to "NEWS", posts_path, class: "nav-link" %>
+      </li>
+
+      <li class="nav-item <%= current_page?(resources_path) ? "active" : "" %>">
+        <%= link_to "RESOURCES", resources_path, class: "nav-link" %>
+      </li>
+
+      <% if current_admin %>
+        <li class="nav-item <%= @in_admin == true ? "active" : "" %>">
+          <%= link_to "ADMIN", admin_posts_path, class: "nav-link" %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "SIGN OUT", destroy_admin_session_path, method: :delete, class: "nav-link" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+
 
 </nav>

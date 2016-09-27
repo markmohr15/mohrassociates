@@ -17,6 +17,7 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 gem 'font-awesome-rails'
 gem 'annotate'
 gem 'will_paginate', '~> 3.1.0'
+gem 'tinymce-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 

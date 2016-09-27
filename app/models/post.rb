@@ -17,10 +17,10 @@ class Post < ApplicationRecord
   validates :content, presence: true
   validates :author, presence: true
 
-  before_update :update_slug
+  before_save :update_slug
 
   def preview
-    content.split(" ").first(50).join(" ") + "..."
+    ActionView::Base.full_sanitizer.sanitize(self.content).split(" ").first(50).join(" ") + "..."
   end
 
   def to_param
