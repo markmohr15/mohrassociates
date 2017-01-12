@@ -2,6 +2,10 @@
   <div class="nav-logo">
     <%= image_tag "logo.png", size: "157x120", class: "navbar-brand" %>
   </div>
+  <div class="nav-float-right">
+    <p> Call Us! </p>
+    <p> (402) 861-5528 </p>
+  </div>
   <div class="collapse nav-menu navbar-toggleable-sm" id="exCollapsingNavbar2">
     <ul class="nav navbar-nav">
       <li class="nav-item <%= current_page?(root_path) ? "active" : "" %>">
@@ -34,10 +38,13 @@
         </li>
       <% end %>
     </ul>
+
   </div>
   <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
     &#9776;
   </button>
+
+
 
 
 </nav>

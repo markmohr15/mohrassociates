@@ -1,21 +1,58 @@
-<div class="row">
+<div class="container-fluid container-home">
   <div class="home-content">
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div id="carouselHome" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="4000" data-pause="false" >
+      <ol class="carousel-indicators">
+        <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselHome" data-slide-to="1"></li>
+        <li data-target="#carouselHome" data-slide-to="2"></li>
+      </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active carousel-checkboxes">
       <h1> We Offer </h1>
         <p class="checkbox"> <%= fa_icon "check-square-o", text: "Bookkeeping" %> </p>
         <p class="checkbox"> <%= fa_icon "check-square-o", text: "Payroll" %> </p>
         <p class="checkbox" id=""> <%= fa_icon "check-square-o", text: "Tax Preparation" %> </p>
         <p class="checkbox" id=""> <%= fa_icon "check-square-o", text: "Consulting" %> </p>
     </div>
+    <div class="carousel-item carousel-checkboxes">
       <h1> Choose Us Because We Are </h1>
-      <div class="col-lg-6 col-xs-12">
         <p class="checkbox"> <%= fa_icon "check-square-o", text: "Affordable" %> </p>
         <p class="checkbox"> <%= fa_icon "check-square-o", text: "Reliable" %> </p>
         <p class="checkbox" id=""> <%= fa_icon "check-square-o", text: "Experienced" %> </p>
         <p class="checkbox"> <%= fa_icon "check-square-o", text: "Industry Experts" %> </p>
-      </div>
+    </div>
+    <div class="carousel-item carousel-testimonials">
+      <h1> What Our Clients Are Saying </h1>
+      <p class="testimonial">
+        “We have used Tom for our income tax preparation since 2010. He treats us like a family member, always asking about our kids. Yet, it’s apparent that he knows his stuff when it comes to our taxes. He has saved us hundreds of dollars over the years and has taken the burden off our shoulders. We look forward to meeting with him every year.”  -Scott and Tammy R., Omaha
+      </p>
+      <p class="testimonial">
+        "While I was laid off work, I became a day trader. One day I received a letter from the IRS that said I owed several hundred thousand dollars. When a friend recommended that I call her tax guy, I was a little skeptical. However, after meeting with Tom, it was obvious that he knew what to do in my situation. We filed an amended tax return and I actually received a small refund.”  -Laurie G., Omaha
+      </p>
+      <p class="testimonial">
+        “My business is organized as an S Corporation. Tom showed me how to save hundreds of dollars in payroll taxes every year.”
+      </p>
+      <p class="testimonial">
+        “I’ve used Mohr and Associates to do the payroll for my company for 3 years. All I do is send in the hours every two weeks and they do the rest. The fee I pay is the same every month and it includes everything; they don’t ‘nickel and dime you’ for quarterly reports and W-2s like the big payroll companies do.”
+      </p>
+      <p class="testimonial">
+        “We moved to Omaha in 2008. A neighbor recommended that we have Tom Mohr complete our income taxes. We have used him every year since. His service is reasonably priced and we appreciate how he explains every detail of our tax return. Over these years, we have become very good friends.”
+      </p>
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev" >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
+  </div>
+</div>
+<div class="container-fluid">
   <div class="col-md-12 col-sm-12 get-started">
     <h1> Ready to Get Started? </h1>
     <%= form_for @contact, url: contact_us_path do |f| %>

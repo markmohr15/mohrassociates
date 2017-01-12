@@ -34,11 +34,13 @@
 
     <%= render "site/header" %>
 
-    <div class="container-fluid">
-
+    <% unless current_page?(root_path) %>
+      <div class="container-fluid">
       <%= yield %>
-
-    </div>
+      </div>
+    <% else %>
+      <%= yield %>
+    <% end %>
 
     <%= render "site/footer" %>
   </body>

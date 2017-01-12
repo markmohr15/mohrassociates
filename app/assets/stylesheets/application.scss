@@ -1,11 +1,19 @@
 //red is 125r, 0g, 9b   7D0009
 //yellow is 254r, 225g, 120b    FEE178
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 860px,
+  lg: 992px,
+  xl: 1200px
+);
+
 @import "bootstrap";
 @import "font-awesome";
 
 body, html {
-  font-family: serif;
+  font-family: arial, serif;
 }
 
 a {
@@ -19,14 +27,45 @@ nav, footer {
   color: black;
 }
 
+footer {
+  border-top: 1px solid #dddddd;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.push {
+  height: 195px;
+}
+
+.push2 {
+  height: 120px;
+}
+
 .navbar-toggler {
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 0px;
   font-size: 24px;
 }
 
-@media (min-width: 768px) {
+.nav-float-right {
+  float: right;
+  color: #7D0009;
+  padding-top: 36px;
+
+  @media (max-width: 859px) {
+    padding-right: 60px;
+  }
+
+  p {
+    margin-bottom: 0.3em;
+  }
+}
+
+@media (min-width: 860px) {
   .navbar-toggleable-sm {
     display: inline-block !important;
     padding-bottom: 25px;
@@ -35,6 +74,7 @@ nav, footer {
 
 footer {
   padding: 10px 10px 10px 60px;
+  height: 80px;
 }
 
 h1 {
@@ -65,8 +105,22 @@ h1 {
 }
 
 .home-content {
-  margin-bottom: 25px;
+  padding: 25px;
   overflow: hidden;
+  color: white;
+  background: rgba(0,0,0,.7);
+}
+
+.carousel-checkboxes {
+  padding-bottom: 160px;
+}
+
+.carousel-testimonials {
+  padding-bottom: 20px;
+}
+
+.carousel-indicators {
+  bottom: -15px;
 }
 
 .fa-check-square-o {
@@ -80,11 +134,7 @@ h1 {
 }
 
 .checkbox {
-  font-size: 18px;
-
-  @media (min-width: 34em) {
-    font-size: 24px;
-  }
+  font-size: 28px;
 }
 
 .checkbox-right {
@@ -106,9 +156,17 @@ h1 {
 }
 
 .navbar {
-  padding: 0;
+  padding: 0 10px;
   border-bottom: 1px solid #dddddd;
   border-radius: 0;
+
+  @media (min-width: 950px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 859px) {
+    padding: 0;
+  }
 }
 
 .navbar-brand {
@@ -122,6 +180,7 @@ h1 {
 li.nav-item {
   .nav-link {
     color: #a7a7a7;
+    font-weight: bold;
   }
 
   .nav-link:hover {
@@ -135,7 +194,7 @@ li.nav-item.active {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 859px) {
   li.nav-item.active {
     .nav-link {
       color: white;
@@ -184,6 +243,15 @@ a.nav-link {
   padding: 30px;
 }
 
+.container-home {
+  padding: 0px;
+  background: asset-data-url("bwlighthouse.jpg") repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .nav-logo {
   padding-left: 20px;
   display: inline-block;
@@ -215,11 +283,12 @@ a.nav-link {
   text-align: center;
 
   input {
-    width: 85%;
+    width: 85.6%;
     padding: 10px;
     font-size: 24px;
     text-align: center;
     border: 1px solid #dddddd;
+    left: -2px;
   }
 
   #web_contact_name, #web_contact_email, #web_contact_phone {
@@ -254,8 +323,11 @@ a.nav-link {
   }
 
   @media (min-width: 34em) {
-    textarea, input {
+    textarea {
       width: 67%;
+    }
+    input {
+      width: 67.3%;
     }
   }
 }
