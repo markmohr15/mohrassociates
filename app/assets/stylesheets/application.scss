@@ -31,17 +31,45 @@ footer {
   border-top: 1px solid #dddddd;
 }
 
-ul {
+.notice, .alert {
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+}
+
+.notice {
+  background-color: #FEE490;
+}
+
+.alert {
+  background-color: #7D0009;
+}
+
+.resources {
   list-style-type: none;
   margin-bottom: 0;
+
+  li {
+    padding-bottom: 25px;
+  }
+}
+
+.profile-pic {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 180px;
+  height: 130px;
+  padding-bottom: 30px;
 }
 
 .push {
-  height: 195px;
+  height: 25px;
 }
 
 .push2 {
-  height: 120px;
+  height: 60px;
 }
 
 .navbar-toggler {
@@ -113,10 +141,57 @@ h1 {
 
 .carousel-checkboxes {
   padding-bottom: 160px;
+  height: 500px;
+
+  h1 {
+    padding-bottom: 50px;
+  }
+
+  .container {
+    text-align: center;
+    width: 270px;
+  }
+
+  .checkbox {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  @media (min-width: 850px) {
+    height: 550px;
+  }
+
+  @media (min-width: 960px) {
+    height: 515px;
+  }
+
+  @media (min-width: 1070px) {
+    height: 485px;
+  }
+
+  @media (min-width: 1180px) {
+    height: 450px;
+  }
 }
 
 .carousel-testimonials {
   padding-bottom: 20px;
+
+  @media (min-width: 850px) {
+    height: 550px;
+  }
+
+  @media (min-width: 960px) {
+    height: 515px;
+  }
+
+  @media (min-width: 1070px) {
+    height: 485px;
+  }
+
+  @media (min-width: 1180px) {
+    height: 450px;
+  }
 }
 
 .carousel-indicators {
@@ -131,16 +206,6 @@ h1 {
 
 .right {
   float: right;
-}
-
-.checkbox {
-  font-size: 28px;
-}
-
-.checkbox-right {
-  @media (min-width: 992px) {
-    float: right;
-  }
 }
 
 #tax-prep {
@@ -253,8 +318,11 @@ a.nav-link {
 }
 
 .nav-logo {
-  padding-left: 20px;
   display: inline-block;
+
+  @media (max-width: 859px) {
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: 544px) {

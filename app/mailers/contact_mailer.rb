@@ -6,6 +6,6 @@ class ContactMailer < ApplicationMailer
     @email = contact.email
     @phone = contact.phone
     @comment = contact.comment
-    mail(to: 'tmohr@mohrassociates.net', subject: "Web Contact Form")
+    mail(to: 'tmohr@mohrassociates.net, markmohr15@gmail.com', subject: "Web Contact Form")
   end
 end
