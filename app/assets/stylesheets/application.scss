@@ -81,6 +81,7 @@ footer {
   top: 40px;
   right: 0px;
   font-size: 24px;
+  padding-left: 0;
 }
 
 .nav-float-right {
@@ -229,6 +230,7 @@ h1 {
   padding: 0 10px;
   border-bottom: 1px solid #dddddd;
   border-radius: 0;
+  max-height: 400px;
 
   @media (min-width: 950px) {
     padding: 0 50px;
