@@ -16,6 +16,10 @@ class SiteController < ApplicationController
     render
   end
 
+  def tax_rates
+    render
+  end
+
   def contact_us
     web_contact = WebContact.new(web_contact_params)
     if web_contact.save

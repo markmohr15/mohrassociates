@@ -63,8 +63,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 180px;
-  height: 130px;
+  width: 259px;
+  height: 187px;
   padding-bottom: 30px;
 }
 
@@ -494,6 +494,28 @@ a.nav-link {
 .mce-container {
   margin-right: 1px !important;
 }
+
+.tax-rates {
+  width: initial;
+  min-width: 67%;
+  margin: 0 auto;
+
+  .status {
+    text-align: center;
+    font-size: 24px;
+    background-color: #7D0009;
+    color: white;
+  }
+
+  th {
+    text-align: center;
+  }
+}
+
+.tax-rates {
+  padding-bottom: 30px;
+}
+
 
 
 
