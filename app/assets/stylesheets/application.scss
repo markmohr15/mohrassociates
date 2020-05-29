@@ -44,6 +44,7 @@ footer {
 
 .alert {
   background-color: #7D0009;
+  color: white;
 }
 
 .resources {
@@ -338,10 +339,6 @@ a.nav-link {
   }
 }
 
-.nav-menu {
-  //display: inline-block;
-}
-
 .header-logo {
   width: 300px;
   height: 230px;
@@ -404,6 +401,13 @@ a.nav-link {
     input {
       width: 67.3%;
     }
+  }
+
+  .g-recaptcha {
+    text-align: -webkit-center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
   }
 }
 

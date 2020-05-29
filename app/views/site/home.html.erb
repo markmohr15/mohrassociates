@@ -64,6 +64,7 @@
       <%= f.email_field :email, required: true, placeholder: "Email" %> <br/>
       <%= f.telephone_field :phone, required: true, placeholder: "Phone" %> <br/>
       <%= f.text_area :comment, required: true, placeholder: "What Can We Help You With?" %> <br/>
+      <div class="g-recaptcha" data-sitekey="<%=ENV["RECAPTCHA_SITE_KEY"]%>"></div>
       <%= f.submit "Contact Us", class: "btn" %>
     <% end %>
   </div>

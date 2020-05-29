@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'rails', '~> 5.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
@@ -13,12 +13,13 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
-gem 'bootstrap', '~> 4.0.0.alpha4'
+gem 'bootstrap', '= 4.0.0.alpha4'
 gem 'font-awesome-rails'
 gem 'annotate'
 gem 'will_paginate', '~> 3.1.0'
 gem 'tinymce-rails'
 gem 'sendgrid-ruby'
+gem 'httparty'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
